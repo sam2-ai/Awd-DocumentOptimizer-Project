@@ -40,39 +40,37 @@ A full-stack document optimization platform with AI-powered tools built with Nex
 
 ```
 Project/
-├── BackEnd-Project/              # Node.js Backend
-│   ├── models/User.js            # User MongoDB Model
-│   ├── myFiles/
-│   │   ├── register.js           # Registration API
-│   │   ├── auth.js               # Login API
-│   │   └── users.js              # Users API
-│   ├── utils/                    # Validation utilities
-│   ├── db.js                     # Database connection
-│   ├── index.js                  # Main server file
-│   └── package.json
-│
-├── frontend-nextjs/              # Next.js Frontend (NEW)
-│   ├── src/
-│   │   ├── app/                  # App Router pages
-│   │   │   ├── page.tsx          # Home page
-│   │   │   ├── login/            # Login page
-│   │   │   ├── signup/           # Signup page
-│   │   │   ├── dashboard/        # User dashboard
-│   │   │   ├── services/         # Service pages
-│   │   │   │   ├── humanizer/    # AI Humanizer
-│   │   │   │   ├── prompt-optimizer/
-│   │   │   │   ├── readability/
-│   │   │   │   └── keyword-checker/
-│   │   │   ├── about/
-│   │   │   └── contact/
-│   │   ├── components/           # Reusable components
-│   │   ├── contexts/             # React contexts (Auth)
-│   │   ├── services/             # API services
-│   │   └── utils/                # Utility functions
-│   ├── package.json
-│   └── next.config.ts
-│
-└── FrontEnd-React-Assignment-1/  # Legacy React Frontend (Vite)
+|-- BackEnd-Project/              # Node.js Backend
+|   |-- models/User.js            # User MongoDB Model
+|   |-- myFiles/
+|   |   |-- register.js           # Registration API
+|   |   |-- auth.js               # Login API
+|   |   |-- users.js              # Users API
+|   |-- utils/                    # Validation utilities
+|   |-- db.js                     # Database connection
+|   |-- index.js                  # Main server file
+|   |-- package.json
+|
+|-- frontend-nextjs/              # Next.js Frontend
+    |-- src/
+    |   |-- app/                  # App Router pages
+    |   |   |-- page.tsx          # Home page
+    |   |   |-- login/            # Login page
+    |   |   |-- signup/           # Signup page
+    |   |   |-- dashboard/        # User dashboard
+    |   |   |-- services/         # Service pages
+    |   |   |   |-- humanizer/    # AI Humanizer
+    |   |   |   |-- prompt-optimizer/
+    |   |   |   |-- readability/
+    |   |   |   |-- keyword-checker/
+    |   |   |-- about/
+    |   |   |-- contact/
+    |   |-- components/           # Reusable components
+    |   |-- contexts/             # React contexts (Auth)
+    |   |-- services/             # API services
+    |   |-- utils/                # Utility functions
+    |-- package.json
+    |-- next.config.ts
 ```
 
 ## Installation & Setup
@@ -84,16 +82,9 @@ npm install
 node index.js
 ```
 
-### Frontend Setup (Next.js - Recommended)
+### Frontend Setup (Next.js)
 ```bash
 cd frontend-nextjs
-npm install
-npm run dev
-```
-
-### Legacy Frontend Setup (React/Vite)
-```bash
-cd FrontEnd-React-Assignment-1
 npm install
 npm run dev
 ```
